@@ -18,7 +18,6 @@ public class FileRecord {
     private String fileName;
     private String fileType;
     
-    @Lob  // Large Object (stores binary data in DB)
-    @Column(columnDefinition = "BLOB")
+    @Lob  // Large Object (stores binary data in DB) 
     private byte[] fileData;
 }
